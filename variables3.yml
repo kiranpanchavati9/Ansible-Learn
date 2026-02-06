@@ -1,0 +1,12 @@
+# Ansible playbook to demonstrate variable from the values.yml file
+- name: Print variables
+  hosts: localhost
+  connection: local
+  gather_facts: false # Fact gathering is disabled for performance
+  vars_files:
+    - values.yml
+
+  tasks:
+    - name: Display the URL details
+      ansible.builtin.debug:
+        msg: "I want to login to the {{ url }}"

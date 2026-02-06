@@ -1,12 +1,15 @@
-## Variables from the playbook
-
+# Ansible playbook to demonstrate variable usage and debugging
 - name: Print variables
   hosts: localhost
   connection: local
+  gather_facts: false # Fact gathering is disabled for performance
+
   vars:
+    # Playbook-level variables
     x: 100
     y: 200
+
   tasks:
-    - name: Print variable x and y from the playbook
+    - name: Display the values of x and y
       ansible.builtin.debug:
         msg: "x = {{ x }}, y = {{ y }}"

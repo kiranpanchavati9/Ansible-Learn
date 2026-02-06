@@ -1,0 +1,4 @@
+- name: Load a file dynamically
+  ansible.builtin.import_tasks: { { filename } }.yml
+  vars:
+    filename: greetings

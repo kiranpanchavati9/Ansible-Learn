@@ -2,3 +2,4 @@
   ansible.builtin.include_tasks: "{{filename}}.yml"
   vars:
     filename: greetings
+    sname: KiranPanchavati

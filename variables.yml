@@ -1,0 +1,8 @@
+## Variables from the inventory file - file name of inventory : hosts.ini
+
+- name: Print variable x and y from the inventory
+  hosts: demo
+  tasks:
+    - name: Print variable x and y from the inventory
+      ansible.builtin.debug:
+        msg: "x = {{ x }}, y = {{ y }}"

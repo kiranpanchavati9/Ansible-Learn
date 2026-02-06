@@ -1,0 +1,5 @@
+- name: Include tasks Dynamically
+  hosts: localhost
+  connection: local
+  roles:
+    - include_tasks

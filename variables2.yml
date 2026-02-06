@@ -1,0 +1,12 @@
+## Variables from the playbook
+
+- name: Print variables
+  hosts: localhost
+  connection: local
+  vars:
+    x: 100
+    y: 200
+  tasks:
+    - name: Print variable x and y from the playbook
+      ansible.builtin.debug:
+        msg: "x = {{ x }}, y = {{ y }}"

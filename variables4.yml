@@ -1,0 +1,7 @@
+# Ansible playbook to demonstrate variable from the roles
+- name: Print variables
+  hosts: localhost
+  connection: local
+  gather_facts: false # Fact gathering is disabled for performance
+  roles:
+    - demo

@@ -1,0 +1,3 @@
+- name: Display the URL details
+  ansible.builtin.debug:
+    msg: "I want to login to the {{ url }}"

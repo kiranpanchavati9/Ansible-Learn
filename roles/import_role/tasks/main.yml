@@ -1,0 +1,7 @@
+- name: Import role statically
+  ansible.builtin.import_role:
+    name: import_role
+
+- name: Import role statically but another task file
+  ansible.builtin.import_role:
+    name: hello

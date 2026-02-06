@@ -1,4 +1,4 @@
-- name: Include tasks Dynamically
+- name: Import Role Statically
   hosts: localhost
   connection: local
   roles:

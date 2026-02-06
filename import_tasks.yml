@@ -1,5 +1,5 @@
 - name: Import tasks static test
-  host: localhost
+  hosts: localhost
   connection: local
   roles:
     - import_tasks

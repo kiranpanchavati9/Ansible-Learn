@@ -1,0 +1,7 @@
+- name: Print 1
+  ansible.builtin.debug:
+    msg: "hello world"
+
+- name: Print 2
+  ansible.builtin.debug:
+    msg: "local world"

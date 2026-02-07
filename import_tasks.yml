@@ -1,0 +1,7 @@
+- name: Import the tasks
+  hosts: localhost
+  connection: local
+  roles:
+    - import_tasks
+
+

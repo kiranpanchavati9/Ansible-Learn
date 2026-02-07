@@ -1,7 +1,0 @@
-- name: Greetings for Raju
-  ansible.builtin.debug:
-    msg: "Hello {{sname}}"
-
-- name: Greetings for Rahul
-  ansible.builtin.debug:
-    msg: "My name is {{sname}}"

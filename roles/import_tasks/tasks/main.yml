@@ -1,9 +1,0 @@
-- name: load greetings - Raju
-  ansible.builtin.import_tasks: greetings.yml
-  vars:
-    sname: Raju
-
-- name: load greetings - Rahul
-  ansible.builtin.import_tasks: greetings.yml
-  vars:
-    sname: Rahul

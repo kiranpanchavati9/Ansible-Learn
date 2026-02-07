@@ -10,6 +10,6 @@
         dest: /tmp/file-copied.txt
 
     - name: Template
-      ansible.builtin.copy:
+      ansible.builtin.template:
         src: test.txt
         dest: /tmp/template-copied.txt

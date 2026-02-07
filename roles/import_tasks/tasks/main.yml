@@ -1,7 +1,7 @@
-- name: Print 1
-  ansible.builtin.debug:
-    msg: "hello world"
+- name: Import the tasks list greetings.yml
+  vars:
+    name1: Kiran
+    name2: Panchavati
 
-- name: Print 2
-  ansible.builtin.debug:
-    msg: "local world"
+  ansible.builtin.import_tasks:
+    file: greetings.yml

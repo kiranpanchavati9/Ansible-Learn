@@ -2,6 +2,6 @@
   vars:
     name1: Kiran
     name2: Panchavati
-    filename: greeting
+    filename: greetings
   ansible.builtin.include_tasks:
         file: "{{filename}}.yml"

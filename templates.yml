@@ -12,4 +12,4 @@
     - name: Template
       ansible.builtin.copy:
         src: test.txt
-        dest: /tmp/file-copied.txt
+        dest: /tmp/template-copied.txt

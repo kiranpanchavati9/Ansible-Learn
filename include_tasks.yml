@@ -1,4 +1,4 @@
-- name: Include the tasks
+- name: Include the tasks dynamically
   hosts: localhost
   connection: local
   roles:

@@ -39,7 +39,8 @@
 ## Logical Operators
 
 - name: Critical Update
-  ansible.builtin.shell: "/usr/bin/apply_patch.sh"
+  ansible.builtin.debug:
+    msg: "This is the server ip address"
   when:
-      - ansible_facts['distribution'] == "CentOS"
-      - server_environment == "production"  # This acts as an "and"
+      - ansible_facts['ansible_all_ipv4_addresses'] == "172.31.19.167"
+      - ansible_facts['ansible_all_ipv6_addresses] == "fe80::8ff:c0ff:fe20:6249"  # This acts as an "and"

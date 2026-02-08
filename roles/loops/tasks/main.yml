@@ -11,7 +11,7 @@
 
 - name: Print the full name of mine.
   ansible.builtin.debug:
-    msg: "My Full Name is {{item}}"
+    msg: "My name is {{ item }}"
   loop:
-    - Panchavati
-    - Kiran
+    - kiran
+    - panchavati

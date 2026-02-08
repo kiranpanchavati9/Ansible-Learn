@@ -1,0 +1,6 @@
+- name: Install the web server
+  ansible.builtin.dnf:
+    name: httpd
+    state: latest
+  when: ansible_facts['os_family'] == "RedHat"
+  notify: Restart httpd

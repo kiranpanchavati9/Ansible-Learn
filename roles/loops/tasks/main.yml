@@ -12,8 +12,6 @@
 
 - name: Print the details.
   ansible.builtin.debug:
-    msg: "My total experience in IT industry is {{ item.experience }} years and looking for the {{item.role1}} and {{item.role2}} positions"
+    msg: "My total experience in IT industry is {{ item.experience }} years and looking for the {{ item.role1 }} and {{ item.role2 }} positions"
   loop:
-    - { experience: '8'}
-    - { role1: 'DevSecops'}
-    - { role2: 'Solution Architect'}
+    - { experience: '8', role1: 'DevSecOps', role2: 'Solution Architect' }

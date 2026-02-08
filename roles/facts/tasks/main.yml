@@ -5,6 +5,10 @@
   when: ansible_facts['os_family'] == "RedHat"
   notify: Restart httpd
 
-- name: Print the facts
+- name: Print the IP address
   ansible.builtin.debug:
     msg: "{{ ansible_default_ipv4.address }}"
+
+- name: Print the architecture 
+  ansible.builtin.debug:
+    msg: "{{ ansible_architecture }}"

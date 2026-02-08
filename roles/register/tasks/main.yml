@@ -1,0 +1,7 @@
+- name: Check the current date on the server
+  ansible.builtin.command: date
+  register: system_date
+  
+- name: Print the captured date
+  ansible.builtin.debug:
+    msg: "The date on the server is {{ system_date.stdout }}"

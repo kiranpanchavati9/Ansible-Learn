@@ -1,0 +1,5 @@
+- name: Handlers
+  hosts: localhost
+  connection: local
+  roles:
+    - nginx_manager

@@ -1,23 +1,29 @@
 - name: Blue Task 1
+  tags: blue
   ansible.builtin.debug:
     msg: "This is Blue Task 1"
 
 - name: Green Task 1
+  tags: green
   ansible.builtin.debug:
     msg: "This is Green Task 1"
 
 - name: Red Task 1
+  tags: red
   ansible.builtin.debug:
     msg: "This is Red Task 1"
 
 - name: Blue Task 2
+  tags: blue
   ansible.builtin.debug:
     msg: "This is Blue Task 2"
 
 - name: Green Task 2
+  tags: green
   ansible.builtin.debug:
     msg: "This is Green Task 2"
 
 - name: Red Task 2
+  tags: red
   ansible.builtin.debug:
     msg: "This is Red Task 2"

@@ -35,3 +35,11 @@
 - name: Restart the nginx if it is not running.
   ansible.builtin.command: systemctl restart nginx
   when: nginx_status != 0
+
+## Logical Operators
+
+- name: Critical Update
+  ansible.builtin.shell: "/usr/bin/apply_patch.sh"
+  when:
+      - ansible_facts['distribution'] == "CentOS"
+      - server_environment == "production"  # This acts as an "and"

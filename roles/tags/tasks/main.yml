@@ -6,6 +6,10 @@
   ansible.builtin.debug:
     msg: "This is Green Task 1"
 
+- name: Red Task 1
+  ansible.builtin.debug:
+    msg: "This is Red Task 1"
+
 - name: Blue Task 2
   ansible.builtin.debug:
     msg: "This is Blue Task 2"
@@ -13,3 +17,7 @@
 - name: Green Task 2
   ansible.builtin.debug:
     msg: "This is Green Task 2"
+
+- name: Red Task 2
+  ansible.builtin.debug:
+    msg: "This is Red Task 2"

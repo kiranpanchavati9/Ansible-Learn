@@ -1,0 +1,3 @@
+- name: Vault Demo Print Password
+  ansible.builtin.debug:
+    msg: Enter the password {{ my_password }}

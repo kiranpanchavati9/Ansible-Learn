@@ -1,0 +1,7 @@
+- name: Include the role
+  hosts: localhost
+  connection: local
+  vars:
+    my_password: Abcd@123
+  roles:
+    - vault

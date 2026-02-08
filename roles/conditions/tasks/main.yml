@@ -42,5 +42,5 @@
   ansible.builtin.debug:
     msg: "This is the server ip address"
   when:
-      - ansible_facts['ansible_all_ipv4_addresses'] == "172.31.19.167"
-      - ansible_facts['ansible_all_ipv6_addresses] == "fe80::8ff:c0ff:fe20:6249"  # This acts as an "and"
+    - "'172.31.19.167' in ansible_all_ipv4_addresses"
+    - "'fe80::8ff:c0ff:fe20:6249' in ansible_all_ipv6_addresses" # This acts as an "and"

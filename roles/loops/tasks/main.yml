@@ -1,12 +1,3 @@
-##  The "List of Dictionaries" Way
-
-- name: Print the full name of mine.
-  ansible.builtin.debug:
-    msg: "My name is {{ item.name }}"
-  loop:
-    - { name: 'kiran' }
-    - { name: 'panchavati' }
-
 ## The "Simple List" Way
 
 - name: Print the full name of mine.
@@ -15,3 +6,14 @@
   loop:
     - kiran
     - panchavati
+
+
+## Dictionary
+
+- name: Print the details.
+  ansible.builtin.debug:
+    msg: "My total experience in IT industry is {{ item.experience }} years and looking for the {{item.role1}} and {{item.role2}} positions"
+  loop:
+    - { experience: '8'}
+    - { role1: 'DevSecops'}
+    - { role2: 'Solution Architect'}

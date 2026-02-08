@@ -1,0 +1,9 @@
+## Loops with a Simple List
+
+- name: Print the full name of mine.
+  ansible.builtin.debug:
+    msg: "My name is {{ item }} "
+    state: present
+  loop:
+    - Kiran
+    - Panchavati

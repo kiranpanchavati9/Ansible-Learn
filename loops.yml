@@ -1,0 +1,5 @@
+- name: Loops
+  hosts: localhost
+  connection: local
+  roles:
+    - loops

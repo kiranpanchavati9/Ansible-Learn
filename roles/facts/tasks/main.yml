@@ -12,3 +12,8 @@
 - name: Print the architecture 
   ansible.builtin.debug:
     msg: "{{ ansible_architecture }}"
+
+
+- name: Print the process 
+  ansible.builtin.debug:
+    msg: "{{ ansible_processor }}"

@@ -1,0 +1,15 @@
+- name: Blue Task 1
+  ansible.builtin.debug:
+    msg: "This is Blue Task 1"
+
+- name: Green Task 1
+  ansible.builtin.debug:
+    msg: "This is Green Task 1"
+
+- name: Blue Task 2
+  ansible.builtin.debug:
+    msg: "This is Blue Task 2"
+
+- name: Green Task 2
+  ansible.builtin.debug:
+    msg: "This is Green Task 2"

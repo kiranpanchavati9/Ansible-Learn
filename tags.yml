@@ -1,0 +1,5 @@
+- name: Register
+  hosts: localhost
+  connection: local
+  roles:
+    - tags

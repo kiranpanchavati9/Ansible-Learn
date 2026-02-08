@@ -1,3 +1,6 @@
+## Using Facts as Conditions:
+## The most common use for conditions is checking system information (Facts) to ensure you are using the right commands for the right OS.
+
 - name: Install Apache on RedHat
   ansible.builtin.yum:
     name: httpd
@@ -9,3 +12,15 @@
     name: apache2
     state: present
   when: ansible_facts['os_family'] == "Debian"
+
+## Using Registered Variables
+
+- name: Check if nginx is running.
+  ansible.builtin.command: systemctl status nginx
+  register: status_nginx_check
+  ignore_errors: true
+
+- name: Take action if nginx is down.
+  ansible.builtin.debug:
+    msg: "Nginx is not running! Investigating..."
+  when: status_nginx_check != 0

@@ -1,6 +1,17 @@
+##  The "List of Dictionaries" Way
+
 - name: Print the full name of mine.
   ansible.builtin.debug:
     msg: "My name is {{ item.name }}"
   loop:
     - { name: 'kiran' }
     - { name: 'panchavati' }
+
+## The "Simple List" Way
+
+- name: Print the full name of mine.
+  ansible.builtin.debug:
+    msg: "My Full Name is {{item}}"
+  loop:
+    - Panchavati
+    - Kiran

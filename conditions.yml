@@ -1,0 +1,5 @@
+- name: check the conditions.
+  hosts: localhost
+  connection: local
+  roles:
+    - conditions

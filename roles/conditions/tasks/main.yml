@@ -24,3 +24,14 @@
   ansible.builtin.debug:
     msg: "Nginx is not running! Investigating..."
   when: status_nginx_check != 0
+
+## Using Registered Variables - New
+
+- name: Check the nginx status whether it is running or not.
+  ansible.builtin.command: systemctl status nginx
+  register: nginx_status
+  ignore_errors: true
+
+- name: Restart the nginx if it is not running.
+  ansible.builtin.command: systemctl restart nginx
+  when: nginx_status != 0
